@@ -11,7 +11,7 @@ RUN apt-get -y install postgresql python3.7 python
 # RUN systemctl enable postgresql
 
 RUN mkdir -p /opt/selene
-RUN chown -R mycroft:users /opt/selene
+# RUN chown -R mycroft:users /opt/selene
 RUN cd /opt/selene
 RUN git clone https://github.com/MycroftAI/selene-backend.git
 
