@@ -6,7 +6,7 @@ RUN apt-get clean
 RUN apt-get -y update
 RUN apt-get -y upgrade
 
-RUN apt-get install python3.7 python
+RUN apt-get -y install python3.7 python
 RUN apt-get install postgresql
 
 RUN systemctl enable postgresql
