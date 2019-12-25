@@ -6,6 +6,7 @@ RUN apt-get clean
 RUN apt-get -y update
 RUN apt-get -y upgrade
 
+ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get -y install postgresql python3.7 python git
 
 # RUN systemctl enable postgresql
