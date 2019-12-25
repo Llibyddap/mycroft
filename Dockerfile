@@ -8,7 +8,7 @@ RUN apt-get -y upgrade
 
 RUN apt-get -y install postgresql python3.7 python
 
-RUN systemctl enable postgresql
+# RUN systemctl enable postgresql
 
 RUN mkdir -p /opt/selene
 RUN chown -R mycroft:users /opt/selene
