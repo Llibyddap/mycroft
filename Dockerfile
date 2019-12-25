@@ -17,7 +17,7 @@ RUN mkdir -p /opt/selene
 RUN cd /opt/selene
 RUN git clone https://github.com/MycroftAI/selene-backend.git
 
-RUN Python3.7 -m pip install pipenv
+RUN Python3 -m pip install pipenv
 RUN cd /opt/selene/selene-backend/db
 RUN pipenv install
 
