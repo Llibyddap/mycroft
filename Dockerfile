@@ -1,5 +1,7 @@
 FROM ubuntu:18.04
 
+ENTRYPOINT /bin/bash
+
 RUN apt-get clean
 RUN apt-get -y update
 RUN apt-get -y upgrade
@@ -41,5 +43,3 @@ RUN mkdir -p /test
 WORKDIR /test
 COPY wait_service.py /test/
 CMD python wait_service.py
-
-ENTRYPOINT /bin/bash
