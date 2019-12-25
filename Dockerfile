@@ -1,4 +1,5 @@
 FROM ubuntu:18.04
+FROM python:3.7
 
 ENTRYPOINT /bin/bash
 
@@ -7,7 +8,7 @@ RUN apt-get -y update
 RUN apt-get -y upgrade
 
 ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get -y install postgresql python3.7 python git
+RUN apt-get -y install postgresql python git
 
 # RUN systemctl enable postgresql
 
